@@ -1,0 +1,154 @@
+/* style.css - stil global */
+:root{
+  --bg: #FFFFFF;
+  --text: #1A1A1A;
+  --accent: #004C97;
+  --accent-hover: #007BFF;
+  --success: #4CAF50;
+  --warn: #FF9800;
+  --danger:#D32F2F;
+}
+
+/* dark mode vars (aplicate de .dark pe body) */
+body.dark {
+  --bg: #0f1720;
+  --text: #e6eef8;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+
+/* navbar fixed */
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:var(--accent);
+  z-index:1000;
+  display:flex;
+  gap:8px;
+  padding:8px 16px;
+  align-items:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+.navbar .brand{
+  color:white;
+  font-weight:700;
+  margin-right:12px;
+}
+.navbar a{
+  color: white;
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:6px;
+}
+.navbar a.active, .navbar a:hover{
+  background: var(--accent-hover);
+}
+
+/* responsive nav: collapse into hamburger on small screens */
+.nav-links{
+  margin-left:auto;
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+.hamburger{
+  display:none;
+  background:transparent;
+  border:0;
+  color:white;
+  font-size:22px;
+}
+
+/* page content spacing so navbar doesn't cover */
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:110px 16px 60px;
+}
+
+/* hero */
+.hero{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:space-between;
+}
+.hero .hero-left{flex:1}
+.hero h1{font-size:36px;margin:0 0 10px}
+.hero p{margin:0 0 10px}
+
+/* search */
+.search-box{display:flex;gap:8px;margin:12px 0}
+.search-box input[type="search"]{
+  padding:8px 10px;border-radius:6px;border:1px solid #ccc;flex:1;
+}
+.search-box button{padding:8px 12px;border-radius:6px;border:0;background:var(--accent);color:white}
+
+/* carousel area */
+.carousel{
+  margin:20px 0;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.08);
+}
+.carousel img{width:100%;display:block;height:350px;object-fit:cover}
+
+/* table */
+.info-table{width:100%;border-collapse:collapse;margin:20px 0}
+.info-table th, .info-table td{padding:10px;border:1px solid #ddd;text-align:left}
+.info-table th{background:#f5f5f5}
+
+/* contact form */
+form.contact-form{display:grid;gap:10px;max-width:700px}
+form input, form textarea{padding:10px;border-radius:6px;border:1px solid #ccc;width:100%}
+form button{padding:10px 14px;border:0;background:var(--accent);color:white;border-radius:6px}
+
+/* helpers */
+.socials{display:flex;gap:8px;margin-top:10px}
+.socials a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:6px;background:#eee;color:var(--accent);text-decoration:none}
+
+/* help button floating */
+.help-btn{
+  position:fixed;
+  right:18px;
+  bottom:120px;
+  background:var(--accent);
+  color:white;border-radius:50%;
+  width:54px;height:54px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  cursor:pointer;
+  z-index:1500;
+}
+
+/* up/down buttons */
+.scroll-btn{
+  position:fixed;right:18px;width:48px;height:48px;border-radius:8px;background:#f1f1f1;color:var(--accent);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,0.12)
+}
+.up-btn{bottom:60px}
+.down-btn{bottom:10px}
+
+/* video embed responsive */
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px}
+.video-wrap iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+
+/* small screen adjustments */
+@media(max-width:700px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .hamburger{display:inline-block}
+  .nav-links{display:none;position:absolute;top:56px;right:12px;background:var(--accent);padding:8px;border-radius:6px;flex-direction:column}
+  .nav-links a{white-space:nowrap}
+  .nav-links.show{display:flex}
+  .carousel img{height:220px}
+}
+
+/* simple dark mode flip */
+.toggle-btn{background:#fff;border:0;padding:6px 10px;border-radius:6px}

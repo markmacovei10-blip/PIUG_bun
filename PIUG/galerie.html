@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DV8L1ZNY4P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DV8L1ZNY4P');
+</script>
+
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Galerie - Primăria Ilia</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">Primăria Ilia</div>
+    <button class="hamburger">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="servicii.html">Servicii</a>
+      <a href="galerie.html" class="active">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="margin-left:8px;display:flex;gap:8px;align-items:center">
+      <button id="theme-toggle" class="toggle-btn">Dark</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="searchable">Galerie foto - Ilia</h1>
+    <p class="searchable">Mai jos sunt fotografii reprezentative. Dacă vrei, poți încărca aici imaginile comunei.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;">
+      <img src="img/1.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/2.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/3.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/4.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/5.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/6.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/7.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/8.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/9.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+      <img src="img/10.jpg" alt="" style="width:100%;height:160px;object-fit:cover;border-radius:6px"/>
+    </div>
+
+    <p><a href="index.html">⬅ Înapoi la Acasă</a></p>
+  </div>
+
+  <div class="help-btn"><i class="fa fa-question"></i></div>
+  <div class="scroll-btn up-btn"><i class="fa fa-arrow-up"></i></div>
+  <div class="scroll-btn down-btn"><i class="fa fa-arrow-down"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

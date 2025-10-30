@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DV8L1ZNY4P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DV8L1ZNY4P');
+</script>
+
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Primăria Comunei Ilia - Acasă</title>
+
+  <!-- font & icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Analytics (exemplu GA4) -->
+  <!-- Înlocuiește 'G-XXXXXXX' cu ID-ul tău -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Primăria Ilia</div>
+
+    <button class="hamburger" aria-label="open menu">☰</button>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="servicii.html">Servicii</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div style="margin-left:8px;display:flex;gap:8px;align-items:center">
+      <button id="theme-toggle" class="toggle-btn">Dark</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="hero searchable">
+      <div class="hero-left">
+        <h1>Bine ați venit la Primăria Comunei Ilia</h1>
+        <p>Informații, servicii și noutăți pentru locuitorii comunei Ilia, județul Hunedoara.</p>
+
+        <div class="search-box">
+          <input id="site-search" type="search" placeholder="Caută în pagină (ex: taxe, program, sediu)"/>
+          <button onclick="document.getElementById('site-search').focus()">Caută</button>
+        </div>
+
+        <p>Localitatea Ilia face parte din județul Hunedoara și include 9 sate: Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Ilia (reședință), Săcămaș, Sârbi și Valea Lungă.</p>
+      </div>
+      
+    </section>
+
+    <!-- carousel simplified: using local images 1..10 -->
+    <div class="carousel">
+      <!-- toate imaginile sunt în folderul img/ -->
+      <img src="img1.jpg" style="display:block"/>
+      <img src="img2.jpg" style="display:none"/>
+      <img src="img3.jpg" style="display:none"/>
+      <img src="img4.jpg" style="display:none"/>
+      <img src="img5.jpg" style="display:none"/>
+      <img src="img6.jpg" style="display:none"/>
+      <img src="img7.jpg" style="display:none"/>
+      <img src="img8.jpg" style="display:none"/>
+      <img src="img9.jpg" style="display:none"/>
+      <img src="img10.jpg" style="display:none"/>
+    </div>
+
+    <section class="searchable">
+      <h2>Informații rapide</h2>
+      <table class="info-table">
+        <thead><tr><th>Element</th><th>Detalii</th></tr></thead>
+        <tbody>
+          <tr><td>Județ</td><td>Hunedoara</td></tr>
+          <tr><td>Suprafață</td><td>~91.38 km²</td></tr>
+          <tr><td>Populație (2021)</td><td>~3.144</td></tr>
+          <tr><td>Adresa primărie</td><td>Str. Libertății, Ilia</td></tr>
+          <tr><td>Telefon</td><td>+40 254 111 123</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="searchable">
+      <h2>Video despre comună</h2>
+      <div class="video-wrap">
+        <!-- linkul video pe care mi l-ai dat -->
+        <iframe src="https://www.youtube.com/embed/eRvocY5s3RU" title="Video Ilia" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="searchable">
+      <h2>Conectează-te cu noi</h2>
+      <div class="socials">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- help & scroll buttons -->
+  <div class="help-btn" title="Help"><i class="fa fa-question"></i></div>
+  <div class="scroll-btn up-btn" title="Sus"><i class="fa fa-arrow-up"></i></div>
+  <div class="scroll-btn down-btn" title="Jos"><i class="fa fa-arrow-down"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
